@@ -242,10 +242,10 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": ["InvokeHashPasswordLambdaDataSource", "FunctionId"]
+              "Fn::GetAtt": ["MutationCreateUserFunction", "FunctionId"]
             },
             {
-              "Fn::GetAtt": ["MutationCreateUserFunction", "FunctionId"]
+              "Fn::GetAtt": ["InvokeHashPasswordLambdaDataSource", "FunctionId"]
             }
           ]
         },
